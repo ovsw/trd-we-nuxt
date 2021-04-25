@@ -19,7 +19,7 @@
 
         <!-- MAIN  -->
         <div
-          class="hero__main pt-12 md:px-8 lg:px-16 xl:px-24 md:py-24 lg:py-32 text-center md:text-left"
+          class="hero__main pt-12 pb-20 md:px-8 lg:px-16 xl:px-24 md:py-24 lg:py-32 text-center md:text-left"
         >
           <div class="relative z-0">
             <h1

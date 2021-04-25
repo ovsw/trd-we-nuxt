@@ -4,13 +4,16 @@
 
 @layer base {
   body {
-    @apply font-body bg-dark text-light;
+    @apply font-body bg-dark text-light text-xl;
   }
 }
 
 @layer utilities {
   .heading1 {
     @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  .heading2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
   .h1 strong {
     @apply font-black;
