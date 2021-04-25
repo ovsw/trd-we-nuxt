@@ -1,19 +1,18 @@
 <template>
-  <nav class="">
-    <div class="border pl-4 pr-4 sm:pl-6 sm:pr-6 md:pr-0 lg:pl-8">
-
-
+  <nav class="fixed z-30 w-full  md:pl-12 ">
+    <div class="blurc bg-gradient border pl-4 pr-4 sm:pl-6 sm:pr-6 md:pr-0 ">
       <div class="flex items-center justify-between h-24">
-
         <!-- desktop menu wrapper -->
         <div class="menuWrapper flex items-center">
           <div class="flex-shrink-0">
             <NuxtLink to="/" class="flex items-center">
-              <img
-                class="h-10 w-10 mr-4"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-400.svg"
-                alt="Tridia Logo"
-              />
+              <span class="h-20 w-20">
+                <lottie
+                  :options="lottieOptions"
+                  @animCreated="handleAnimation"
+                />
+              </span>
+
               <span class="pt-1 text-4xl font-black tracking-wide">Tridia</span>
             </NuxtLink>
           </div>
@@ -35,14 +34,17 @@
             </div>
           </div>
         </div>
-        
+
         <!-- CTA link -->
         <div class="hidden lg:block items-center">
-           <NuxtLink to="/inscriere/" class=" flex items-center ">
-            <span class=" bg-b-orange py-8 px-6 uppercase tracking-widest text-2xl font-semibold ">Înscriere</span>
+          <NuxtLink to="/inscriere/" class=" flex items-center ">
+            <span
+              class=" bg-b-orange py-8 px-6 uppercase tracking-widest text-2xl font-semibold "
+              >Înscriere</span
+            >
           </NuxtLink>
         </div>
-        
+
         <div class="-mr-2 flex md:hidden">
           <!-- Mobile menu button -->
           <button
@@ -118,18 +120,63 @@
 </template>
 
 <script>
+import lottie from "vue-lottie/src/lottie.vue";
+import * as animationData from "@/assets/lottie/tridia-cube-orange.json";
 import nav from "@/assets/nav.json";
+
 export default {
+  components: {
+    lottie
+  },
   data() {
     return {
       nav: nav,
-      isOpen: false
+      isOpen: false,
+      anim: null,
+      lottieOptions: {
+        animationData: animationData.default,
+        name: "heroLottie"
+      }
     };
   },
   methods: {
     toggle() {
       this.isOpen = !this.isOpen;
+    },
+    handleAnimation: function(anim) {
+      this.anim = anim;
     }
+  },
+  mounted() {
+    // console.log("height", window.innerHeight);
+    // console.log("animation", this.anim);
+
+    const logoAnimation = this.anim;
+
+    var windowSize = {
+      w: window.innerWidth,
+      h: window.innerHeight
+    };
+
+    function scale(num, in_min, in_max, out_min, out_max) {
+      return (
+        ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+      );
+    }
+
+    window.addEventListener(
+      "scroll",
+      function(ev) {
+        var top = this.scrollY;
+        console.log("top:", top);
+
+        var scaleCalc = scale(top, 0, windowSize.h, 1, 24);
+
+        var frameNumber = scaleCalc < 25 ? scaleCalc : scaleCalc % 24;
+        logoAnimation.goToAndStop(frameNumber, true);
+      },
+      false
+    );
   }
 };
 </script>

@@ -4,7 +4,12 @@
 
 @layer base {
   body {
-    @apply font-body bg-dark text-light md:ml-12;
+    @apply font-body bg-dark text-light;
+  }
+}
+
+@layer utilities {
+  .bg-gradient {
     background: get-color("dark-shade");
     background-color: #7f5a83;
     background-image: radial-gradient(
@@ -17,6 +22,9 @@
     background-position: bottom right;
     background-size: 200vw 200vh;
     background-attachment: fixed;
-    
+  }
+  .blurc {
+    background: rgba(30, 4, 44, 0.5);
+    backdrop-filter: blur(14px);
   }
 }
