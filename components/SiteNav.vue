@@ -39,7 +39,7 @@
         <div class="hidden lg:block items-center">
           <NuxtLink to="/inscriere/" class=" flex items-center ">
             <span
-              class=" bg-b-orange py-8 px-6 uppercase tracking-widest text-2xl font-semibold "
+              class=" bg-b-orange py-8 px-10 uppercase tracking-widest text-xl font-semibold "
               >Înscriere</span
             >
           </NuxtLink>
