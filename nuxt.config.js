@@ -13,7 +13,6 @@ const configSanity = {
 };
 const client = createClient(configSanity);
 
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
@@ -37,10 +36,7 @@ export default {
   css: ["@/assets/fonts/fonts.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    "~plugins/preview.client.js",
-    "~plugins/image-builder.js",
-  ],
+  plugins: ["~plugins/preview.client.js", "~plugins/image-builder.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -53,6 +49,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/svg-sprite",
     "@nuxtjs/sanity/module"
   ],
 

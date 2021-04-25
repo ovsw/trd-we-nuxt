@@ -1,87 +1,90 @@
 <template>
-  <section class="hero with-sidebar-left-l">
-    <div class="hero__inner">
-      <div
-        class="hero__image border-right [ box-600 ]"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div class="heroLottie">
+  <section class="hero">
+    <div class="hero__inner relative z-0 overflow-hidden">
+      <div class="spotlight-gradient"></div>
+
+      <div class="container px-4 mx-auto md:flex xl:py-20">
+        <!-- ANIMATION -->
+        <div
+          class="hero__imageheroLottie 
+          lg:pt-0
+          md:order-2
+          md:w-1/3 lg:w-1/2
+          "
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <lottie :options="lottieOptions" @animCreated="handleAnimation" />
         </div>
-      </div>
 
-      <div class="hero__text [  box-600 md:box-900 border-right flow  ]">
-        <div class="large-header  gap-top-900">
-          <h1
-            class="headline"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-out"
-          >
-            Instruire <br />
-            <span>3DS Max</span>
-          </h1>
-          <div class="radial-gradient"></div>
-        </div>
-        <p class="gap-top-800">
-          <span
-            class="text-400 color-muted"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-out"
-            data-aos-delay="500"
-            >De la experți locali din TM, in persoană, pentru:</span
-          >
-          <strong class="visually-hidden">Designer de Interior.</strong>
-          <br />
-          <strong
-            class="hero__typeIt text-600 md:text-800"
-            id="typeIt"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-out"
-            data-aos-delay="800"
-          ></strong>
-        </p>
-        <p
-          class="md:gap-top-800"
-          data-aos="fade-right"
-          data-aos-duration="1200"
-          data-aos-easing="ease-out"
-          data-aos-delay="1500"
-        >
-          Tu ne spui cu ce problemă te confrunti, noi te învățăm cum sa o
-          rezolvi.
-        </p>
+        <!-- MAIN  -->
         <div
-          class="cluster-l"
-          data-aos="fade-right"
-          data-aos-duration="1400"
-          data-aos-easing="ease-out"
-          data-aos-delay="1800"
+          class="hero__main pt-12 md:px-8 lg:px-16 xl:px-24 md:py-24 lg:py-32 text-center md:text-left"
         >
-          <div>
-            <a class="[ nav-link nav-link--big ]" href="#"
-              ><span>Află Cum</span> ARROW
-            </a>
+          <div class="relative z-0">
+            <h1
+              class="heading1"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+            >
+              Instruire <br class="hidden lg:inline" />
+              <span>3DS Max</span>
+            </h1>
           </div>
-        </div>
-
-        <div
-          class="hero__ct"
-          data-aos="zoom-out-up"
-          data-aos-duration="700"
-          data-aos-easing="ease-out"
-          data-aos-delay="1800"
-        >
-          <div class="radial-gradient"></div>
-          <div class="round-button">
-            <div class="round-button-inner">
-              <a href="#">
-                ARROW
-              </a>
-            </div>
+          <p class="">
+            <span
+              class="text-muted mt-14 inline-block"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="500"
+              >De la experți locali din TM, in persoană, pentru:</span
+            >
+            <strong class="visually-hidden block mt-8 text-5xl text-b-orange"
+              >Designeri de Interior.</strong
+            >
+            <br />
+            <strong
+              class="hero__typeIt text-xl"
+              id="typeIt"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="800"
+            ></strong>
+          </p>
+          <p
+            class="mt-8 uppercase tracking-wider"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-easing="ease-out"
+            data-aos-delay="1500"
+          >
+            Tu ne spui cu ce problemă 3D te confrunti, <br />
+            noi te învățăm cum sa o rezolvi.
+          </p>
+          <div class="mt-12">
+            <ButtonC url="/">Află Cum</ButtonC>
+            <!-- <a class="[ nav-link nav-link--big ]" href="#"
+                ><span>Află Cum</span> ARROW
+              </a> -->
+          </div>
+          <div
+            class="hero__ct"
+            data-aos="zoom-out-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-out"
+            data-aos-delay="1800"
+          >
+            <!-- <div class="spotlight-gradient"></div>
+            <div class="round-button">
+              <div class="round-button-inner">
+                <a href="#">
+                  ARROWW
+                </a>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>

@@ -9,6 +9,12 @@
 }
 
 @layer utilities {
+  .heading1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  .h1 strong {
+    @apply font-black;
+  }
   .bg-gradient {
     background: get-color("dark-shade");
     background-color: #7f5a83;
@@ -26,5 +32,32 @@
   .blurc {
     background: rgba(30, 4, 44, 0.5);
     backdrop-filter: blur(14px);
+  }
+  .spotlight-gradient {
+    position: absolute;
+    left: -340px;
+    top: -350px;
+    right: auto;
+    bottom: -110px;
+    z-index: -1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 800px;
+    height: 800px;
+    background-image: radial-gradient(
+        circle farthest-corner at 50% 50%,
+        rgba(255, 59, 0, 0.13),
+        rgba(255, 255, 255, 0) 48%
+      ),
+      radial-gradient(
+        circle farthest-corner at 50% 50%,
+        rgba(255, 196, 0, 0.17),
+        rgba(50, 132, 112, 0.12) 35%,
+        rgba(20, 20, 20, 0) 67%,
+        rgba(20, 20, 20, 0) 69%
+      );
+    opacity: 0.7;
   }
 }
