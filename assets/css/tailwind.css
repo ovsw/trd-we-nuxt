@@ -8,6 +8,20 @@
   }
 }
 
+@layer components {
+  .footerColumn {
+    @apply flex flex-col flex-1 px-20 py-10 lg:py-20 space-y-6;
+  }
+  .footerColumn div:last-child {
+    margin-top: auto !important;
+  }
+  .socialLink {
+  }
+  .socialLink img {
+    @apply w-10 h-10;
+  }
+}
+
 @layer utilities {
   .heading1 {
     @apply text-4xl md:text-5xl lg:text-6xl;
@@ -17,6 +31,9 @@
   }
   .h1 strong {
     @apply font-black;
+  }
+  .footerHeader {
+    @apply uppercase tracking-widest text-base font-semibold;
   }
   .bg-gradient {
     background: get-color("dark-shade");

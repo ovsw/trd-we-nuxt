@@ -2,6 +2,7 @@
   <div>
     <Hero />
     <Partners />
+    <SectionsRenderer :sections="siteHome.content.sections.sections" />
   </div>
 </template>
 

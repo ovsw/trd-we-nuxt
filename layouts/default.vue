@@ -7,6 +7,8 @@
       <Nuxt />
       <!-- /End replace -->
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
