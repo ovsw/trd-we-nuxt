@@ -51,9 +51,7 @@
         </p>
         <div class="cluster-l">
           <div>
-            <a class="[ nav-link nav-link--big ]" href="#">
-              <ButtonC url="/despre-noi/">Misiunea Noastră</ButtonC>
-            </a>
+            <ButtonC url="/despre-noi/">Misiunea Noastră</ButtonC>
           </div>
         </div>
       </div>
