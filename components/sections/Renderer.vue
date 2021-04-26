@@ -30,6 +30,8 @@ export default {
         return "SectionsStaff";
       } else if (sectionType == "reusedSection") {
         return "SectionsReused";
+      } else if (sectionType == "featCoursesSection") {
+        return "SectionsFeaturedCourses";
       }
       return "SectionsDefault";
     }
