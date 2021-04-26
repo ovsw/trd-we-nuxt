@@ -20,9 +20,26 @@
   .socialLink img {
     @apply w-10 h-10;
   }
+  .heading1 strong,
+  .heading2 strong,
+  .heading3 strong {
+    @apply font-black;
+  }
+  .heading2 strong,
+  .heading3 strong {
+    @apply text-b-orange;
+  }
 }
 
 @layer utilities {
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--auto-grid-min-size, 16rem), 1fr)
+    );
+    grid-gap: var(--auto-grid-gap, 1rem);
+  }
   .section {
     @apply py-24 md:py-32;
   }
@@ -35,15 +52,7 @@
   .heading3 {
     @apply text-4xl lg:text-5xl;
   }
-  .heading1 strong,
-  .heading2 strong,
-  .heading3 strong {
-    @apply font-black;
-  }
-  .heading2 strong,
-  .heading3 strong {
-    @apply text-b-orange;
-  }
+
   .footerHeader {
     @apply uppercase tracking-widest text-base font-semibold;
   }

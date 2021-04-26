@@ -168,7 +168,7 @@ export default {
       "scroll",
       function(ev) {
         var top = this.scrollY;
-        console.log("top:", top);
+        // console.log("top:", top);
 
         var scaleCalc = scale(top, 0, windowSize.h, 1, 24);
 

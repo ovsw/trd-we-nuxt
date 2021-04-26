@@ -26,22 +26,10 @@ export default {
     getComponentFromSectionType(sectionType) {
       if (sectionType == "stepsSection") {
         return "SectionsSteps";
-      } else if (sectionType == "faqSection") {
-        return "SectionsFaq";
-      } else if (sectionType == "ctaSection") {
-        return "SectionsCta";
-      } else if (sectionType == "bigHeading") {
-        return "SectionsBigHeading";
-      } else if (sectionType == "tableSection") {
-        return "SectionsTable";
+      } else if (sectionType == "staffSection") {
+        return "SectionsStaff";
       } else if (sectionType == "reusedSection") {
         return "SectionsReused";
-      } else if (sectionType == "cardSection") {
-        return "SectionsCards";
-      } else if (sectionType == "sponsorsSection") {
-        return "SectionsSponsors";
-      } else if (sectionType == "menuSection") {
-        return "SectionsMenu";
       }
       return "SectionsDefault";
     }
