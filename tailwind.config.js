@@ -90,12 +90,36 @@ module.exports = {
       //   large: "100px"
       // },
       typography: {
-        dark: {
+        DEFAULT: {
           css: {
+            color: "#c1c4c3",
+            strong: {
+              color: "#c1c4c3"
+            },
             a: {
               color: "white",
               "&:hover": {
-                color: "#ffcc00"
+                color: "#FF6917"
+              }
+            }
+          }
+        },
+        steps: {
+          css: {
+            color: "#c1c4c3",
+            strong: {
+              color: "white",
+              display: "block",
+              "margin-top": "1rem",
+              "text-transform": "uppercase",
+              "letter-spacing": "1.5px",
+              "font-weight": "400",
+              "font-size": "0.9rem"
+            },
+            a: {
+              color: "white",
+              "&:hover": {
+                color: "#FF6917"
               }
             }
           }

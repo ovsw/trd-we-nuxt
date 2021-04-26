@@ -24,8 +24,8 @@ export default {
     // TODO: menu section
     // TODO: embedsection
     getComponentFromSectionType(sectionType) {
-      if (sectionType == "magSection") {
-        return "SectionsMagazine";
+      if (sectionType == "stepsSection") {
+        return "SectionsSteps";
       } else if (sectionType == "faqSection") {
         return "SectionsFaq";
       } else if (sectionType == "ctaSection") {

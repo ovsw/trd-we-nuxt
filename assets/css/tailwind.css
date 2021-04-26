@@ -23,14 +23,26 @@
 }
 
 @layer utilities {
+  .section {
+    @apply py-24 md:py-32;
+  }
   .heading1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-6xl lg:text-7xl;
   }
   .heading2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    @apply text-5xl lg:text-6xl;
   }
-  .h1 strong {
+  .heading3 {
+    @apply text-4xl lg:text-5xl;
+  }
+  .heading1 strong,
+  .heading2 strong,
+  .heading3 strong {
     @apply font-black;
+  }
+  .heading2 strong,
+  .heading3 strong {
+    @apply text-b-orange;
   }
   .footerHeader {
     @apply uppercase tracking-widest text-base font-semibold;
