@@ -20,9 +20,6 @@ export default {
     }
   },
   methods: {
-    // TODO: sponsors section
-    // TODO: menu section
-    // TODO: embedsection
     getComponentFromSectionType(sectionType) {
       if (sectionType == "stepsSection") {
         return "SectionsSteps";
@@ -32,6 +29,8 @@ export default {
         return "SectionsReused";
       } else if (sectionType == "featCoursesSection") {
         return "SectionsFeaturedCourses";
+      } else if (sectionType == "testimonialsSection") {
+        return "SectionsTestimonials";
       }
       return "SectionsDefault";
     }

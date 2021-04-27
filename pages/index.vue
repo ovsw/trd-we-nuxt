@@ -7,9 +7,23 @@
 </template>
 
 <script>
-const query = /* groq */ `{
+const query = /* groq */ `
+{
   "siteHome": *[_type == 'siteHome'] {
-    ...
+    ...,
+    content {
+      sections {
+        sections[]{
+  				...,
+  				_type == 'testimonialsSection' => {
+  					...,
+  					testimonials[]->{
+              ...
+            }
+					}
+				}
+      }
+    }
   }[0]
 }
 `;
