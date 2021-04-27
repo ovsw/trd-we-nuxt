@@ -41,7 +41,7 @@
     grid-gap: var(--auto-grid-gap, 1rem);
   }
   .section {
-    @apply py-24 md:py-32;
+    @apply my-24 md:my-32;
   }
   .heading1 {
     @apply text-6xl lg:text-7xl;
