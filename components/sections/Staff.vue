@@ -7,7 +7,7 @@
             <strong>{{ section.title1 }}</strong>
             {{ section.title2 }}
           </h2>
-          <d iv class="spotlight-gradient"></d>
+          <div class="spotlight-gradient"></div>
           <SanityContent
             v-if="section.text"
             :blocks="section.text"
