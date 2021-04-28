@@ -1,15 +1,29 @@
 <template>
   <div class="testimonialsSection [ section ]">
     <div class="[ wrapper flow ]">
-      <div class="z-0 relative">
-        <h2 class="heading2 mb-20">Ce spun <strong>cursanții</strong></h2>
-        <!-- <div class="spotlight-gradient"></div> -->
-      </div>
-
-      <div class="nav">
-        <button @click="prev">prev</button>
-
-        <button @click="next">next</button>
+      <div class="z-0 relative mb-10 flex items-end">
+        <div class="spotlight-gradient"></div>
+        <h2 class="heading2">Ce spun <strong>cursanții</strong></h2>
+        <div class="md:ml-10 space-x-6">
+          <button @click="prev">
+            <span class="sr-only">înapoi</span>
+            <svg-icon
+              name="chevron-left-regular"
+              title="săgeată stânga"
+              height="2em"
+              width="2em"
+            />
+          </button>
+          <button @click="next">
+            <span class="sr-only">înainte</span>
+            <svg-icon
+              name="chevron-right-regular"
+              title="săgeată dreapta"
+              height="2em"
+              width="2em"
+            />
+          </button>
+        </div>
       </div>
 
       <!-- swiper -->
@@ -20,6 +34,7 @@
             :key="item._id"
             class="[ swiper-slide ] gridItem card card__white 
             space-y-6  p-10 border-l border-t
+            cursor-move
             "
           >
             <img
