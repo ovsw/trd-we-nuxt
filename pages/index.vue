@@ -3,6 +3,7 @@
     <Hero />
     <Partners />
     <SectionsRenderer :sections="siteHome.content.sections.sections" />
+    <PostsListing :posts="featuredPosts" />
   </div>
 </template>
 
@@ -24,7 +25,8 @@ const query = /* groq */ `
 				}
       }
     }
-  }[0]
+  }[0],
+  "featuredPosts": *[_type == 'post'] [0..2] | order(content.date desc)
 }
 `;
 

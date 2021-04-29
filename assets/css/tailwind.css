@@ -20,29 +20,8 @@
   .socialLink img {
     @apply w-10 h-10;
   }
-  .heading1 strong,
-  .heading2 strong,
-  .heading3 strong {
-    @apply font-black;
-  }
-  .heading2 strong,
-  .heading3 strong {
-    @apply text-b-orange;
-  }
-}
 
-@layer utilities {
-  .auto-grid {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(var(--auto-grid-min-size, 16rem), 1fr)
-    );
-    grid-gap: var(--auto-grid-gap, 1rem);
-  }
-  .section {
-    @apply my-24 md:my-32;
-  }
+  /*  headings */
   .heading1 {
     @apply text-6xl lg:text-7xl;
   }
@@ -52,10 +31,35 @@
   .heading3 {
     @apply text-4xl lg:text-5xl;
   }
-
+  .heading1 strong,
+  .heading2 strong,
+  .heading3 strong {
+    @apply font-black;
+  }
+  .heading2 strong,
+  .heading3 strong {
+    @apply text-b-orange;
+  }
+  /* sections */
+  .section {
+    @apply my-24 md:my-32;
+  }
+  /* footer */
   .footerHeader {
     @apply uppercase tracking-widest text-base font-semibold;
   }
+  /* layout */
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--auto-grid-min-size, 16rem), 1fr)
+    );
+    grid-gap: var(--auto-grid-gap, 1rem);
+  }
+}
+
+@layer utilities {
   .bg-gradient {
     background: get-color("dark-shade");
     background-color: #7f5a83;
