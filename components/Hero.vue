@@ -65,7 +65,7 @@
             noi te învățăm cum sa o rezolvi.
           </p>
           <div class="mt-12">
-            <ButtonC url="/">Află Cum</ButtonC>
+            <ButtonC url="/#steps">Află Cum</ButtonC>
             <!-- <a class="[ nav-link nav-link--big ]" href="#"
                 ><span>Află Cum</span> ARROW
               </a> -->

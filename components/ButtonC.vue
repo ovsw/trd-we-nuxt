@@ -36,7 +36,7 @@ export default {
         };
       }
       return {
-        is: "router-link",
+        is: "NuxtLink",
         to: url
       };
     }

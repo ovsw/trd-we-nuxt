@@ -60,7 +60,16 @@ export default {
   build: {},
 
   router: {
-    trailingSlash: true
+    trailingSlash: true,
+    scrollBehavior(to, from, savedPosition) {
+      if (to.hash) {
+        return {
+          selector: to.hash,
+          offset: { x: 0, y: 200 },
+          behavior: "smooth"
+        };
+      }
+    }
   },
 
   sanity: {

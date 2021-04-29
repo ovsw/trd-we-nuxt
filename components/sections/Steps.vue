@@ -2,6 +2,7 @@
   <section class="steps section">
     <div class=" max-w-screen-xl mx-auto px-4 md:px-0 md:pr-4">
       <h2
+        id="steps"
         class=" max-w-xl mb-20 heading2 relative z-0"
         data-aos-once="true"
         data-aos="fade-right"
