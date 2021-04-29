@@ -23,13 +23,13 @@
 
   /*  headings */
   .heading1 {
-    @apply text-6xl lg:text-7xl;
+    @apply text-6xl lg:text-7xl text-light-light;
   }
   .heading2 {
-    @apply text-5xl lg:text-6xl;
+    @apply text-5xl lg:text-6xl text-light-light;
   }
   .heading3 {
-    @apply text-4xl lg:text-5xl;
+    @apply text-4xl lg:text-5xl text-light-light;
   }
   .heading1 strong,
   .heading2 strong,
@@ -84,7 +84,7 @@
     top: -350px;
     right: auto;
     bottom: -110px;
-    z-index: -1;
+    z-index: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

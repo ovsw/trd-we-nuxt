@@ -29,3 +29,7 @@ Vue.filter("slugify", value => {
     .replace(/^-+/, "")
     .replace(/-+$/, "");
 });
+
+Vue.filter("pretty", value => {
+  console.log(value);
+});

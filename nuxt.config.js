@@ -63,6 +63,39 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  generate: {
+    fallback: true,
+    crawler: false,
+    async routes() {
+      const pages = await client.fetch(/* groq */ `*[_type == 'page']{
+          ...,
+          content {
+  					...,
+            sections1[]{
+              ...,
+              _type == 'staffSection' => {
+                ...,
+                staffList[]->{
+                  ...
+                }
+              }
+            } 
+           
+          }
+        }`);
+      const posts = await client.fetch(`*[_type == 'post']`);
+
+      return [
+        ...pages.map(page => {
+          return {
+            route: `/${page.content.slug.current}/`,
+            payload: page
+          };
+        })
+      ];
+    }
+  },
+
   router: {
     trailingSlash: true,
     scrollBehavior(to, from, savedPosition) {

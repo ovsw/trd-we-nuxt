@@ -11,7 +11,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
             libero labore natus atque, ducimus sed.
           </p>
-          <div class="spotlight-gradient"></div>
+          <!-- <div class="spotlight-gradient"></div> -->
         </div>
         <div
           class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"

@@ -32,8 +32,8 @@ export default {
 };
 </script>
 
-<style scoped>
-.cluster-l > * {
+<style lang="css" scoped>
+/* .cluster-l > * {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -46,5 +46,5 @@ export default {
 }
 .justify-end > * {
   justify-content: flex-end !important;
-}
+} */
 </style>

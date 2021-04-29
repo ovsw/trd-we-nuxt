@@ -2,7 +2,10 @@
   <div class="staffSection section px-4">
     <div class="container mx-auto">
       <div class=" space-y-10">
-        <div class="flow relative flow-space-400 z-0">
+        <div
+          v-if="section.title1 || section.title2"
+          class="flow relative flow-space-400 z-0"
+        >
           <h2 class="heading2 max-w-lg">
             <strong>{{ section.title1 }}</strong>
             {{ section.title2 }}
@@ -19,6 +22,9 @@
           class="staffSection__wrapper [ auto-grid ]"
           style="--auto-grid-gap:3rem; --auto-grid-min-size: 17rem;"
         >
+          <!-- <div v-for="card in section.staffList" :key="card._id">
+          {{ card }}
+        </div> -->
           <CardStaff
             v-for="(card, index) in section.staffList"
             :key="index"

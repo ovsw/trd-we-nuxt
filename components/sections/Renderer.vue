@@ -31,6 +31,8 @@ export default {
         return "SectionsFeaturedCourses";
       } else if (sectionType == "testimonialsSection") {
         return "SectionsTestimonials";
+      } else if (sectionType == "ctaSection") {
+        return "SectionsCta";
       }
       return "SectionsDefault";
     }
