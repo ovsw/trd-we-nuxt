@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed z-30 w-full  md:pl-12 ">
+  <nav class="fixed z-30 w-full  md:pl-12">
     <div class="blurc bg-gradient border pl-4 pr-4 sm:pl-6 sm:pr-6 md:pr-0 ">
       <div class="flex items-center justify-between h-24">
         <!-- desktop menu wrapper -->
@@ -49,10 +49,10 @@
           <!-- Mobile menu button -->
           <button
             @click="toggle"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+            class="inline-flex items-center justify-center p-2 rounded-md text-light-light hover:text-white  focus:outline-none"
           >
             <svg
-              :class="[isOpen ? 'hidden' : 'block', 'h-6 w-6']"
+              :class="[isOpen ? 'hidden' : 'block', 'h-10 w-10']"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -65,7 +65,7 @@
               ></path>
             </svg>
             <svg
-              :class="[isOpen ? 'block' : 'hidden', 'h-6 w-6']"
+              :class="[isOpen ? 'block' : 'hidden', 'h-10 w-10']"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -84,7 +84,7 @@
 
     <!-- MOBILE MENU -->
     <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
-      <div class="px-2 pt-2 pb-3 sm:px-3">
+      <div class="px-2 pt-2 pb-3 sm:px-3 bg-b-purple">
         <!-- ACTIVE STYLES <a
           href="#"
           class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -94,21 +94,21 @@
           v-for="(navItem, index) in nav"
           :key="index"
           :to="navItem.url"
-          class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+          class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
         >
           {{ navItem.name }}
         </NuxtLink>
       </div>
-      <div class="pt-4 pb-3 border-t border-gray-700">
+      <div class="pt-4 pb-3 border-t border-gray-700 bg-light-light">
         <div class="px-2">
           <a
             href="tel:555-555-555"
-            class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
             >Sună-ne</a
           >
           <NuxtLink
             to="/inscriere/"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
           >
             Inscriere
           </NuxtLink>

@@ -4,7 +4,7 @@
       <div class=" space-y-10">
         <div
           v-if="section.title1 || section.title2"
-          class="flow relative flow-space-400 z-0"
+          class="flow relative flow-space-400 z-0 px-4 md:px-10"
         >
           <h2 class="heading2 max-w-lg">
             <strong>{{ section.title1 }}</strong>

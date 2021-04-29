@@ -1,15 +1,16 @@
 <template>
   <div>
-    <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+    <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-40 lg:pb-44 lg:px-8">
       <!-- <div class="absolute inset-0">
         <div class="bg-white h-1/3 sm:h-2/3" />
       </div> -->
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center relative z-0">
           <h2 class="heading2">De pe <strong>Blog</strong></h2>
-          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-            libero labore natus atque, ducimus sed.
+          <p
+            class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-8 sm:mb-4"
+          >
+            Tutoriale, tips &amp; tricks, noutăți toate despre designul 3D.
           </p>
           <!-- <div class="spotlight-gradient"></div> -->
         </div>

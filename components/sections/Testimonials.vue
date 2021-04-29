@@ -1,28 +1,32 @@
 <template>
   <div class="testimonialsSection [ section ]">
     <div class="[ wrapper flow ]">
-      <div class="z-0 relative mb-10 flex items-end">
+      <div class="z-0 relative mb-10 ">
         <div class="spotlight-gradient"></div>
-        <h2 class="heading2">Ce spun <strong>cursanții</strong></h2>
-        <div class="md:ml-10 space-x-6">
-          <button @click="prev">
-            <span class="sr-only">înapoi</span>
-            <svg-icon
-              name="chevron-left-regular"
-              title="săgeată stânga"
-              height="2em"
-              width="2em"
-            />
-          </button>
-          <button @click="next">
-            <span class="sr-only">înainte</span>
-            <svg-icon
-              name="chevron-right-regular"
-              title="săgeată dreapta"
-              height="2em"
-              width="2em"
-            />
-          </button>
+        <div class="relative z-10 flex items-end">
+          <h2 class="heading2 px-4 lg:px-10">
+            Ce spun <strong>cursanții</strong>
+          </h2>
+          <div class="ml-4 md:ml-10 space-x-2 hidden md:block">
+            <button @click="prev">
+              <span class="sr-only">înapoi</span>
+              <svg-icon
+                name="chevron-left-regular"
+                title="săgeată stânga"
+                height="2em"
+                width="2em"
+              />
+            </button>
+            <button @click="next">
+              <span class="sr-only">înainte</span>
+              <svg-icon
+                name="chevron-right-regular"
+                title="săgeată dreapta"
+                height="2em"
+                width="2em"
+              />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -35,6 +39,7 @@
             class="[ swiper-slide ] gridItem card card__white 
             space-y-6  p-10 border-l border-t
             cursor-move
+           max-w-sm md:max-w-md
             "
           >
             <img
@@ -43,12 +48,12 @@
                   .width(200)
                   .height(200)
               "
-              class="avatar rounded-full"
+              class="avatar rounded-full w-24 h-24 md-"
               :alt="item.authorTitle"
             />
-            <p>“{{ item.text }}”</p>
-            <h3>{{ item.authorName }}</h3>
-            <p class="[ color-primary ] upperCaseText">
+            <p class="text-base">“{{ item.text }}”</p>
+            <h3 class="text-gray-500">{{ item.authorName }}</h3>
+            <p class="[ color-primary ] uppercase text-sm text-gray-300">
               {{ item.authorTitle }}
             </p>
           </div>
@@ -115,7 +120,6 @@ export default {
 
 <style lang="css" scoped>
 .gridItem {
-  max-width: 29%;
 }
 .swiper-button-prev,
 .swiper-button-next {

@@ -1,5 +1,5 @@
 <template>
-  <div class="border z-10 relative mx-4 bg-gray-500 bg-opacity-5">
+  <div class="border z-10 relative mx-4 md:mx-0 bg-gray-500 bg-opacity-5">
     <div class="max-w-screen-2xl mx-auto relative">
       <div class="spotlight-gradient"></div>
 
@@ -19,14 +19,16 @@
             <p class="mt-4 text-lg leading-6 text-indigo-200">
               {{ section.text }}
             </p>
-            <ButtonC
-              :url="`/${button.url}/`"
-              class="mt-8 mr-6"
-              v-for="button in section.buttons"
-              :key="button._key"
-            >
-              {{ button.text }}
-            </ButtonC>
+            <div class="mt-8">
+              <ButtonC
+                :url="`/${button.url}/`"
+                class=" mr-6"
+                v-for="button in section.buttons"
+                :key="button._key"
+              >
+                {{ button.text }}
+              </ButtonC>
+            </div>
           </div>
         </div>
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-3 md:aspect-h-2">

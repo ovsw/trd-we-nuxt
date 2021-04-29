@@ -2,7 +2,7 @@
   <div class="bg-gradient">
     <SiteNav />
 
-    <main class="md:ml-12 pt-24">
+    <main class="md:ml-12 pt-24 overflow-x-hidden">
       <!-- Replace with your content -->
       <Nuxt />
       <!-- /End replace -->
