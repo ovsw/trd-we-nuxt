@@ -5,7 +5,7 @@
         <div class="bg-white h-1/3 sm:h-2/3" />
       </div> -->
       <div class="relative max-w-7xl mx-auto">
-        <div class="text-center relative z-0">
+        <div v-if="showHeader" class="text-center relative z-0">
           <h2 class="heading2">De pe <strong>Blog</strong></h2>
           <p
             class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-8 sm:mb-4"
@@ -103,6 +103,10 @@ export default {
     posts: {
       type: Array,
       default: () => []
+    },
+    showHeader: {
+      type: Boolean,
+      default: false
     }
   }
 };

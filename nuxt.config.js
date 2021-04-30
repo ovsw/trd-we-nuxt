@@ -83,12 +83,20 @@ export default {
            
           }
         }`);
-      const posts = await client.fetch(`*[_type == 'post']`);
+      const posts = await client.fetch(/* groq */ `*[_type == 'post'] {
+          ...
+          } | order(content.date asc)`);
 
       return [
         ...pages.map(page => {
           return {
             route: `/${page.content.slug.current}/`,
+            payload: page
+          };
+        }),
+        ...posts.map(page => {
+          return {
+            route: `/blog/${page.content.slug.current}/`,
             payload: page
           };
         })

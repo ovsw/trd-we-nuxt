@@ -1,10 +1,14 @@
 export const state = () => ({
-  pagesSlugs: []
+  pagesSlugs: [],
+  postsSlugs: []
 });
 
 export const mutations = {
   setPagesSlugs(state, slugs) {
     state.pagesSlugs = slugs;
+  },
+  setPostsSlugs(state, slugs) {
+    state.postsSlugs = slugs;
   }
 };
 
@@ -14,5 +18,10 @@ export const actions = {
       .fetch('*[_type == "page"].content.slug.current')
       .catch(e => console.error(e));
     commit("setPagesSlugs", pagesSlugs);
+
+    const postsSlugs = await $sanity
+      .fetch('*[_type == "post"].content.slug.current')
+      .catch(e => console.error(e));
+    commit("setPostsSlugs", postsSlugs);
   }
 };
