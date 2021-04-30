@@ -24,7 +24,7 @@
                 v-for="(navItem, index) in nav"
                 :key="index"
                 :to="navItem.url"
-                class="px-2 lg:px-3 pt-4 lg:text-lg font-medium text-gray-300 hover:text-white  focus:outline-none focus:text-white focus:bg-gray-700"
+                class="px-2 lg:px-3 pt-4 lg:text-lg font-medium text-gray-300 hover:text-white  focus:outline-none focus:text-b-orange"
               >
                 {{ navItem.name }}
               </NuxtLink>
@@ -41,7 +41,7 @@
         <div class="hidden lg:block items-center">
           <NuxtLink to="/inscriere/" class=" flex items-center ">
             <span
-              class=" bg-b-orange py-8 px-10 uppercase tracking-widest text-xl font-semibold "
+              class=" bg-gradient-to-r from-orange-500 to-pink-900 py-8 px-10 uppercase tracking-widest text-xl font-semibold "
               >Înscriere</span
             >
           </NuxtLink>

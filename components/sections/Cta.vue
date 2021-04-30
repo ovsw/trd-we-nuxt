@@ -14,7 +14,7 @@
               <span class="block">{{ section.title }}</span>
               <span
                 v-if="section.subTitle"
-                class="block text-red-900 font-extrabold mt-2"
+                class="block text-b-purple font-extrabold mt-2"
                 >{{ section.subTitle }}</span
               >
             </h2>

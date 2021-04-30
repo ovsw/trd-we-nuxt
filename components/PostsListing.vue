@@ -63,7 +63,7 @@
                   class="block mt-2"
                 >
                   <p class="text-xl font-semibold text-gray-100">
-                    {{ post.content.title }}
+                    {{ post.content.title }} - {{ post.content.longTitle }}
                   </p>
                   <p class="mt-3 text-base text-gray-400">
                     {{ post.content.excerpt }}
@@ -106,7 +106,7 @@ export default {
     },
     showHeader: {
       type: Boolean,
-      default: false
+      default: true
     }
   }
 };
