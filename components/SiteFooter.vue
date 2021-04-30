@@ -6,8 +6,13 @@
         <NuxtLink to="/"
           ><img src="~/assets/images/logos/tridia-logo-white.png"
         /></NuxtLink>
-        <p>Hai să păstrăm legatura ;)</p>
-        <div class="with-sidebar-right-l overflowing">
+        <p>
+          Tridia oferă instruire practică în 3DSMax pentru tineri din domenii
+          creative prin cursuri susținute de experți, cu o abordare eficientă,
+          într-un mediu prietenos.
+        </p>
+        <p v-if="false">Hai să păstrăm legatura ;)</p>
+        <div v-if="false" class="with-sidebar-right-l overflowing">
           <form
             id="email-form"
             name="email-form"
@@ -42,8 +47,10 @@
 
         <div>
           <p>
-            Site si Branding de
-            <a href="https://studiorovst.com">Studio ROVST</a>
+            Site și Branding de
+            <a href="https://studiorovst.com" target="_blank" rel="noopener">
+              Studio ROVST
+            </a>
           </p>
         </div>
       </div>
@@ -53,28 +60,37 @@
         <p class="footerHeader">Scurtături</p>
         <LCluster style="--spacing: 3rem;">
           <ul class="space-y-2">
-            <li><a href="/blog/">Noutăți</a></li>
-            <li>
-              <a
-                href="/cursuri/curs-3d-studio-max-arhitectura-and-design-interior/"
-                >Curs 3D Arhitectură &amp; Design Interior</a
+            <li><NuxtLink to="/blog/">Noutăți</NuxtLink></li>
+            <li><NuxtLink to="/cursuri/">Cursuri</NuxtLink></li>
+            <!-- <li>
+              <NuxtLink
+                to="/cursuri/curs-3d-studio-max-arhitectura-and-design-interior/"
+                >Curs 3D Arhitectură &amp; Design Interior</NuxtLink
               >
             </li>
             <li>
-              <a href="/cursuri/curs-3d-studio-max-game-design/"
-                >Curs 3D Game Design</a
+              <NuxtLink to="/cursuri/curs-3d-studio-max-game-design/"
+                >Curs 3D Game Design</NuxtLink
               >
-            </li>
-            <li><a href="/echipa-tridia/">Echipă</a></li>
-            <li><a href="/despre-noi/">Despre Noi</a></li>
+            </li> -->
+            <li><NuxtLink to="/echipa-tridia/">Echipă</NuxtLink></li>
+            <li><NuxtLink to="/despre-noi/">Despre Noi</NuxtLink></li>
           </ul>
 
-          <ul class=" space-y-2">
-            <li><a href="/contact/">Contact</a></li>
-            <li><a href="/termeni-si-conditii/">Termeni și Condiții</a></li>
-            <li><a href="/politica-cookies/">Politică cookies</a></li>
+          <ul class=" space-y-2 mt-2">
+            <li><NuxtLink to="/contact/">Contact</NuxtLink></li>
             <li>
-              <a href="/politica-de-confidentialitate-si-gdpr/">GDPR</a>
+              <NuxtLink to="/termeni-si-conditii/"
+                >Termeni și Condiții</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink to="/politica-cookies/">Politică cookies</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/politica-de-confidentialitate-si-gdpr/"
+                >GDPR</NuxtLink
+              >
             </li>
           </ul>
         </LCluster>
@@ -111,7 +127,8 @@
 
         <div>
           <p class="label label--small mt-12 mb-6">Sociale</p>
-          <LCluster>
+          <!-- <LCluster> -->
+          <div class="flex space-x-4">
             <span>
               <a href="#" target="_blank" rel="noopener" class="socialLink">
                 <img
@@ -138,7 +155,8 @@
                 />
               </a>
             </span>
-          </LCluster>
+          </div>
+          <!-- </LCluster> -->
         </div>
       </div>
     </div>
