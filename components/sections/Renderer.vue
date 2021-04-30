@@ -33,6 +33,8 @@ export default {
         return "SectionsTestimonials";
       } else if (sectionType == "ctaSection") {
         return "SectionsCta";
+      } else if (sectionType == "rteSection") {
+        return "SectionsRte";
       }
       return "SectionsDefault";
     }

@@ -42,7 +42,7 @@
   }
   /* sections */
   .section {
-    @apply my-24 md:my-32;
+    @apply my-24 md:my-32 xl:my-52;
   }
   /* footer */
   .footerHeader {
@@ -60,7 +60,7 @@
 }
 
 @layer utilities {
-  .bg-gradient {
+  .page-bg-gradient {
     background: get-color("dark-shade");
     background-color: #7f5a83;
     background-image: radial-gradient(

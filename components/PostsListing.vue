@@ -34,7 +34,7 @@
               />
             </div>
             <div
-              class="flex-1 bg-white bg-opacity-5 p-6 flex flex-col justify-between"
+              class="flex-1 bg-white bg-opacity-10 p-6 flex flex-col justify-between"
             >
               <div class="flex-1">
                 <div class="">

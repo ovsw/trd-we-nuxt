@@ -1,11 +1,9 @@
 <template>
-  <div class="bg-gradient">
+  <div class="page-bg-gradient">
     <SiteNav />
 
     <main class="md:ml-12 pt-24 overflow-x-hidden">
-      <!-- Replace with your content -->
       <Nuxt />
-      <!-- /End replace -->
     </main>
 
     <SiteFooter />

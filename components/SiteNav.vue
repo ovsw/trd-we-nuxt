@@ -1,6 +1,8 @@
 <template>
   <nav class="fixed z-30 w-full  md:pl-12">
-    <div class="blurc bg-gradient border pl-4 pr-4 sm:pl-6 sm:pr-6 md:pr-0 ">
+    <div
+      class="blurc page-bg-gradient border pl-4 pr-4 sm:pl-6 sm:pr-6 md:pr-0 "
+    >
       <div class="flex items-center justify-between h-24">
         <!-- desktop menu wrapper -->
         <div class="menuWrapper flex items-center">

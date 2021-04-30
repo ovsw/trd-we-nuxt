@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   corePlugins: {
@@ -20,6 +21,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        orange: colors.orange,
+        purple: colors.purple,
         transparent: "transparent",
         current: "currentColor",
         "b-orange": {
@@ -97,12 +100,24 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            color: "#c1c4c3",
+            color: "#b5aea6",
             strong: {
               color: "#c1c4c3"
             },
+            h2: {
+              color: "#fffdf5"
+            },
+            h3: {
+              color: "#fffdf5"
+            },
+            h4: {
+              color: "#fffdf5"
+            },
+            blockquote: {
+              color: "#ffffff"
+            },
             a: {
-              color: "white",
+              color: "#FF6917",
               "&:hover": {
                 color: "#FF6917"
               }
@@ -111,7 +126,7 @@ module.exports = {
         },
         steps: {
           css: {
-            color: "#c1c4c3",
+            color: "#b9b9b9",
             strong: {
               color: "white",
               display: "block",
