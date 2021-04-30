@@ -15,6 +15,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.4",
+    "nuxt-typeform": "0.0.1",
     "swiper": "^6.5.8",
     "vue-awesome-swiper": "^4.1.1",
     "vue-lottie": "^0.2.1"

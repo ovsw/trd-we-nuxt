@@ -35,6 +35,8 @@ export default {
         return "SectionsCta";
       } else if (sectionType == "rteSection") {
         return "SectionsRte";
+      } else if (sectionType == "typeformSection") {
+        return "SectionsTypeform";
       }
       return "SectionsDefault";
     }
