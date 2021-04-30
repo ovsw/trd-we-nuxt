@@ -3,7 +3,7 @@
     <PageHeader
       :title="page.content.title"
       :longTitle="page.content.longTitle"
-      :intro="page.content.intro"
+      :intro="page.content.excerpt"
     />
 
     <SectionsRenderer :sections="page.content.sections1" />
