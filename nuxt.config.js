@@ -13,23 +13,84 @@ const configSanity = {
 };
 const client = createClient(configSanity);
 
+const seoTitle = "Cursuri de Design 3D 3DS Max în Timișoara | Tridia";
+const seoDescription = "Instruire profesionala Design 3D, 3DS Max, Timișoara.";
+const seoSocialShareImage = "/tridia-default-social-share-image.jpg";
+const seoCannonicalUrl = "https://tridia.ro";
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "trd-web2",
+    title: seoTitle,
     htmlAttrs: {
-      lang: "en"
+      lang: "ro"
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content: seoDescription
+      },
+      {
+        hid: "ogtitle",
+        name: "og:title",
+        content: seoTitle
+      },
+      {
+        hid: "ogdescription",
+        name: "og:description",
+        content: seoDescription
+      },
+      {
+        hid: "ogimage",
+        name: "og:image",
+        content: seoSocialShareImage
+      },
+      {
+        hid: "msTitleColor",
+        name: "msapplication-TileColor",
+        content: "#da532c"
+      },
+      {
+        hid: "theme-color",
+        name: "msapplication-TileColor",
+        content: "#ffffff"
+      }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    link: []
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png"
+      },
+      {
+        rel: "apple-touch-icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/apple-touch-icon.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png"
+      },
+      { rel: "manifest", href: "/site.webmanifest" },
+      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#ff7700" }
+      // { rel: "cannonical", href: seoCannonicalUrl }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

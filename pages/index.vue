@@ -32,6 +32,48 @@ const query = /* groq */ `
 
 export default {
   name: "siteHome",
+
+  computed: {
+    seoTitle() {
+      if (this.siteHome.content.seo && this.siteHome.content.seo.title)
+        return this.siteHome.content.seo.title;
+      return undefined;
+    },
+    seoDescription() {
+      if (this.siteHome.content.seo && this.siteHome.content.seo.description)
+        return this.siteHome.content.seo.description;
+      return undefined;
+    },
+    seoImage() {
+      return undefined;
+    },
+    seositeHomeUrl() {
+      return `https://tridia.ro/`;
+    },
+    seoShareImage() {
+      return undefined;
+    }
+  },
+
+  head() {
+    return {
+      title: this.seoTitle,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.seoDescription
+        },
+        {
+          hid: "ogurl",
+          name: "og:url",
+          content: this.seoPageUrl
+        }
+      ],
+      link: [{ rel: "cannonical", href: this.seoPageUrl }]
+    };
+  },
+
   asyncData({ $sanity }) {
     const sanityCall = $sanity.fetch(query);
     // console.log("🎈 asyncData: called", sanityCall);
