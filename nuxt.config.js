@@ -152,6 +152,9 @@ export default {
           }`);
 
       return [
+        {
+          route: "/inscriere/"
+        },
         ...pages.map(page => {
           return {
             route: `/${page.content.slug.current}/`,

@@ -110,9 +110,9 @@
           >
           <NuxtLink
             to="/inscriere/"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white bg-b-orange focus:outline-none "
           >
-            Inscriere
+            Înscriere
           </NuxtLink>
         </div>
       </div>
