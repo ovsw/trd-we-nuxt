@@ -24,6 +24,7 @@ const query = /* groq */ `
 
 export default {
   name: "StaffMemberPage",
+  scrollToTop: true,
 
   validate({ params, store, query }) {
     // console.log('params:', params)

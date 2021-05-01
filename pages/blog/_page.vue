@@ -25,6 +25,7 @@ const query = /* groq */ `
 
 export default {
   name: "Post",
+  scrollToTop: true,
 
   validate({ params, store, query }) {
     // console.log('params:', params)

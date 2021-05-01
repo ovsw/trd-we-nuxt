@@ -21,6 +21,7 @@ const query = /* groq */ `
 
 export default {
   name: "Page",
+  scrollToTop: true,
 
   asyncData({ $sanity, params, payload }) {
     const sanityCall = $sanity.fetch(query);

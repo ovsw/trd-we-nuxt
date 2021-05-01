@@ -34,7 +34,7 @@ const query = /* groq */ `
 
 export default {
   name: "Page",
-
+  scrollToTop: true,
   validate({ params, store, query }) {
     // console.log('params:', params)
     // If FALSE redirect to 404 page

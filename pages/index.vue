@@ -32,6 +32,7 @@ const query = /* groq */ `
 
 export default {
   name: "siteHome",
+  scrollToTop: true,
 
   computed: {
     seoTitle() {
