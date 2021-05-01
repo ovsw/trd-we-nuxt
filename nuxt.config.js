@@ -119,7 +119,12 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxt-typeform"],
+  modules: ["nuxt-typeform", "@nuxtjs/sitemap"],
+
+  sitemap: {
+    hostname: "https://tridia.ro",
+    gzip: true
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
