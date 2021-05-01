@@ -102,6 +102,7 @@
           :key="index"
           :to="navItem.url"
           class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
+          @click.native="close"
         >
           {{ navItem.name }}
         </NuxtLink>
@@ -111,8 +112,10 @@
           <a
             href="tel:0743437074"
             class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
-            >Sună-ne 0743-437-074</a
+            @click="close"
           >
+            Sună-ne 0743-437-074
+          </a>
           <a
             href="/inscriere-curs.html"
             tatget="_blank"
@@ -151,6 +154,9 @@ export default {
   methods: {
     toggle() {
       this.isOpen = !this.isOpen;
+    },
+    close() {
+      this.isOpen = false;
     },
     handleAnimation: function(anim) {
       this.anim = anim;
