@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       title="Blog"
-      longTitle="Tutoriale, Stiri, Noutăți 3D"
+      longTitle="Tutoriale, Știri, Noutăți 3D"
       intro=""
     />
 
