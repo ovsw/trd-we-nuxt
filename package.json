@@ -13,6 +13,7 @@
     "@nuxtjs/svg-sprite": "^0.5.2",
     "@sanity/image-url": "^0.140.22",
     "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@typeform/embed": "^1.2.1",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.4",
     "nuxt-typeform": "0.0.1",

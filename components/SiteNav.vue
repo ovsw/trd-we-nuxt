@@ -39,12 +39,17 @@
 
         <!-- CTA link -->
         <div class="hidden lg:block items-center">
-          <NuxtLink to="/inscriere/" class=" flex items-center ">
+          <a
+            href="/inscriere-curs.html"
+            tatget="_blank"
+            rel="noopener"
+            class=" flex items-center "
+          >
             <span
               class=" bg-gradient-to-r from-orange-500 to-pink-900 py-8 px-10 uppercase tracking-widest text-xl font-semibold "
               >Înscriere</span
             >
-          </NuxtLink>
+          </a>
         </div>
 
         <div class="-mr-2 flex md:hidden">
@@ -104,16 +109,18 @@
       <div class="pt-4 pb-3 border-t border-gray-700 bg-light-light">
         <div class="px-2">
           <a
-            href="tel:555-555-555"
+            href="tel:0743437074"
             class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
-            >Sună-ne</a
+            >Sună-ne 0743-437-074</a
           >
-          <NuxtLink
-            to="/inscriere/"
+          <a
+            href="/inscriere-curs.html"
+            tatget="_blank"
+            rel="noopener"
             class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white bg-b-orange focus:outline-none "
           >
             Înscriere
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>

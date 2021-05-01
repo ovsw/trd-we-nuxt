@@ -152,9 +152,9 @@ export default {
           }`);
 
       return [
-        {
-          route: "/inscriere/"
-        },
+        // {
+        //   route: "/inscriere/"
+        // },
         ...pages.map(page => {
           return {
             route: `/${page.content.slug.current}/`,
