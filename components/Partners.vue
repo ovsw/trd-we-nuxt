@@ -51,7 +51,7 @@
         </p>
         <div class="cluster-l">
           <div>
-            <ButtonC url="despre-noi">Misiunea Noastră</ButtonC>
+            <ButtonC url="/despre-noi/">Misiunea Noastră</ButtonC>
           </div>
         </div>
       </div>

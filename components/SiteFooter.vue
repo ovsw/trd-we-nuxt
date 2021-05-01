@@ -130,7 +130,12 @@
           <!-- <LCluster> -->
           <div class="flex space-x-4">
             <span>
-              <a href="#" target="_blank" rel="noopener" class="socialLink">
+              <a
+                href="https://www.facebook.com/cursuri.tridia"
+                target="_blank"
+                rel="noopener"
+                class="socialLink"
+              >
                 <img
                   src="https://assets.website-files.com/5fc26bcebd65e872af7fed31/5fc2d6c44a77e5ca2e017c67_5fb410854861eda4ec030b2f_Group%202%201.svg"
                   alt="Facebook Logo Icon"
@@ -147,14 +152,14 @@
               </a>
             </span>
 
-            <span>
+            <!-- <span>
               <a href="#" target="_blank" rel="noopener" class="socialLink">
                 <img
                   src="https://assets.website-files.com/5fc26bcebd65e872af7fed31/5fc2d6c451c3f8eaf374fb3b_5fb410854861ed692b030b2d_Group%2010%201.svg"
                   alt="Twitter Logo Icon"
                 />
               </a>
-            </span>
+            </span> -->
           </div>
           <!-- </LCluster> -->
         </div>

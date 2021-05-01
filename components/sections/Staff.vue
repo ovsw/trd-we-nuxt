@@ -19,7 +19,7 @@
         </div>
 
         <div
-          class="staffSection__wrapper [ auto-grid ]"
+          class="staffSection__wrapper [ auto-grid ] relative z-10"
           style="--auto-grid-gap:3rem; --auto-grid-min-size: 17rem;"
         >
           <!-- <div v-for="card in section.staffList" :key="card._id">

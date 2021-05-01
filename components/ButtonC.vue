@@ -37,7 +37,7 @@ export default {
       }
       return {
         is: "NuxtLink",
-        to: `${url}/`
+        to: `${url}`
       };
     }
   }

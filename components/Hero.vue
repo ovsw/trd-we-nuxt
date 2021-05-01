@@ -74,8 +74,8 @@
             data-aos-easing="ease-out"
             data-aos-delay="1500"
           >
-            Tu ne spui cu ce problemă 3D te confrunti, <br />
-            noi te învățăm cum sa o rezolvi.
+            Tu ne spui cu ce problemă 3D te confrunți, <br />
+            noi te învățăm cum să o rezolvi.
           </p>
           <div class="mt-12">
             <ButtonC url="/#steps">Află Cum</ButtonC>

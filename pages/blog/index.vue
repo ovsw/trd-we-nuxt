@@ -3,7 +3,7 @@
     <PageHeader
       title="Blog"
       longTitle="Tutoriale, Stiri, Noutăți 3D"
-      intro="dlkasnjdknaskjd naskjdn askpjdasjkd"
+      intro=""
     />
 
     <PostsListing :posts="posts" :showHeader="false" />
