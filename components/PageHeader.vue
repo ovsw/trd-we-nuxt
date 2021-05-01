@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-0 overflow-hidden -mb-40">
+  <div class="relative z-0 overflow-hidden -mb-24 md:-mb-36">
     <div class="spotlight-gradient"></div>
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-36 sm:px-6 lg:px-8">
       <div class="text-center">
