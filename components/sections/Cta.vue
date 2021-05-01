@@ -23,7 +23,7 @@
             </p>
             <div class="mt-8">
               <ButtonC
-                :url="`/${button.url}/`"
+                :url="button.url"
                 class=" mr-6"
                 v-for="button in section.buttons"
                 :key="button._key"

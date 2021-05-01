@@ -9,8 +9,8 @@
           <span>Parteneri</span> <br />
           de incredere:
         </h2>
-        <LCluster wrapper="ul" style="--spacing: 3rem;">
-          <li>
+        <ul class="flex">
+          <li class="mt-4 mr-16">
             <a href="https://faber.ro/" target="_blank" rel="noopener">
               <span class="sr-only">Faber</span>
               <img
@@ -23,7 +23,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="mt-4 mr-16">
             <a href="https://f-o-r.ro/" target="_blank" rel="noopener">
               <span class="sr-only">F.O.R.</span>
               <img
@@ -36,7 +36,7 @@
               />
             </a>
           </li>
-        </LCluster>
+        </ul>
       </div>
 
       <!-- right -->
@@ -51,7 +51,7 @@
         </p>
         <div class="cluster-l">
           <div>
-            <ButtonC url="/despre-noi/">Misiunea Noastră</ButtonC>
+            <ButtonC url="despre-noi">Misiunea Noastră</ButtonC>
           </div>
         </div>
       </div>

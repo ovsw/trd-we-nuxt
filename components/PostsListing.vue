@@ -30,7 +30,7 @@
                     .width(400)
                     .height(300)
                 "
-                :alt="post.content.mainImage.alt"
+                :alt="post.content.title"
               />
             </div>
             <div

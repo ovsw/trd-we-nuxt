@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer text-md md:ml-10">
+  <footer class="footer text-md md:ml-12">
     <div class="lg:flex border">
       <!-- COL1 -->
       <div class="footerColumn space-y-10 ">
