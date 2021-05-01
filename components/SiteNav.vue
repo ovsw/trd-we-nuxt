@@ -196,4 +196,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.nuxt-link-active {
+  color: #ff6917 !important;
+}
+</style>
