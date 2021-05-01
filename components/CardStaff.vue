@@ -36,7 +36,7 @@
           class="[ nav-link mt-10 ]"
           :url="`/echipa/${card.content.slug.current}/`"
         >
-          Citeste despre {{ staffMemberNameArr[0] }}
+          Citește despre {{ staffMemberNameArr[0] }}
         </ButtonC>
       </div>
       <!-- END read more link -->
