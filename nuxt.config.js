@@ -86,6 +86,9 @@ export default {
       const posts = await client.fetch(/* groq */ `*[_type == 'post'] {
           ...
           } | order(content.date asc)`);
+      const staffMembers = await client.fetch(/* groq */ `*[_type == 'staffMember'] {
+          ...
+          }`);
 
       return [
         ...pages.map(page => {
@@ -97,6 +100,12 @@ export default {
         ...posts.map(page => {
           return {
             route: `/blog/${page.content.slug.current}/`,
+            payload: page
+          };
+        }),
+        ...staffMembers.map(page => {
+          return {
+            route: `/echipa/${page.content.slug.current}/`,
             payload: page
           };
         })

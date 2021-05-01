@@ -32,7 +32,10 @@
 
       <!-- read more link -->
       <div>
-        <ButtonC class="[ nav-link mt-10 ]" to="/">
+        <ButtonC
+          class="[ nav-link mt-10 ]"
+          :url="`/echipa/${card.content.slug.current}/`"
+        >
           Citeste despre {{ staffMemberNameArr[0] }}
         </ButtonC>
       </div>
