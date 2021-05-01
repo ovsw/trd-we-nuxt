@@ -41,8 +41,21 @@
               data-aos-delay="500"
               >De la experți locali din TM, in persoană, pentru:</span
             >
-            <strong class="visually-hidden block mt-8 text-5xl text-b-orange"
-              >Designeri de Interior.</strong
+
+            <vue-typer
+              class="visually-hidden block mt-8 text-5xl text-b-orange"
+              :text="[
+                'Arhitecți.',
+                'Designeri de Interior.',
+                'Game Designeri.'
+              ]"
+              erase-style="select-back"
+              eraseDelay="50"
+              initial-action="erasing"
+              >Arhitecți
+              <span class="sr-only"
+                >, Designeri de interior, Game Designeri</span
+              ></vue-typer
             >
             <br />
             <strong
@@ -122,4 +135,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+/* .vue-typer {
+  font-family: monospace;
+} */
+
+/* .vue-typer .custom.caret {
+  width: 10px;
+  background-color: #3f51b5;
+} */
+</style>
