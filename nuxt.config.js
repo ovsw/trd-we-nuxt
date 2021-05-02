@@ -116,7 +116,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     "@nuxtjs/svg-sprite",
-    "@nuxtjs/sanity/module"
+    "@nuxtjs/sanity/module",
+    "@nuxtjs/google-analytics"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -204,5 +205,10 @@ export default {
   sanity: {
     ...configSanity,
     withCredentials: true
+  },
+
+  googleAnalytics: {
+    // Options
+    id: "UA-196071438-1"
   }
 };
