@@ -1,8 +1,11 @@
 <template>
   <figure>
-    <SanityImage
-      :asset-id="asset._ref"
-      auto="format"
+    <img
+      :src="
+        $urlFor({ asset })
+          .width(1310)
+          .height(873)
+      "
       width="1310"
       height="873"
       :alt="alt"
