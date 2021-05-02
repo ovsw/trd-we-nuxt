@@ -1,3 +1,3 @@
 <template functional>
-  <div :v-html="props.code"></div>
+  <div v-html="props.code"></div>
 </template>
