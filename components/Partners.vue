@@ -4,12 +4,12 @@
 
     <div class=" md:flex flex-wrap items-start">
       <!-- left -->
-      <div class="space-y-10 p-20 flex-1 border border-r-0">
+      <div class="space-y-10 p-10 md:p-20 flex-1 border md:border-r-0">
         <h2 class="heading2">
           <span>Parteneri</span> <br />
           de incredere:
         </h2>
-        <ul class="flex">
+        <ul class="flex flex-wrap">
           <li class="mt-4 mr-16">
             <a href="https://faber.ro/" target="_blank" rel="noopener">
               <span class="sr-only">Faber</span>
@@ -40,7 +40,7 @@
       </div>
 
       <!-- right -->
-      <div class="p-20 space-y-10 border  flex-1">
+      <div class="p-10 md:p-20 space-y-10 border  flex-1">
         <h2 class="heading2 max-w-lg ">
           Credem în <span>importanța educației de calitate</span><br />
           în Design 3D

@@ -40,9 +40,11 @@
         </div>
 
         <!-- body -->
-        <div class="steps__item-content flex p-10 flex-1 lg:w-1/2 pr-24">
+        <div
+          class="steps__item-content flex py-10 md:px-10 flex-1 lg:w-1/2 xl:pr-24"
+        >
           <!-- bar -->
-          <div class="bar md:mr-20">
+          <div class="bar lg:mr-10 xl:mr-20">
             <div
               class="circle rounded-full w-3 h-3 mb-4 border-2 border-b-orange"
             ></div>
