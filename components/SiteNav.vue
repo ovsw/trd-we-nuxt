@@ -18,7 +18,7 @@
               <span class="pt-1 text-4xl font-black tracking-wide">Tridia</span>
             </NuxtLink>
           </div>
-          <div class="hidden md:block">
+          <div class="hidden xl:block">
             <div class="ml-6 flex items-center space-x-2">
               <NuxtLink
                 v-for="(navItem, index) in nav"
@@ -38,7 +38,7 @@
         </div>
 
         <!-- CTA link -->
-        <div class="hidden lg:block items-center">
+        <div class="hidden xl:block items-center">
           <a
             href="/inscriere-curs.html"
             tatget="_blank"
@@ -52,7 +52,7 @@
           </a>
         </div>
 
-        <div class="-mr-2 flex md:hidden">
+        <div class="-mr-2 flex xl:hidden">
           <!-- Mobile menu button -->
           <button
             @click="toggle"
@@ -90,7 +90,7 @@
     </div>
 
     <!-- MOBILE MENU -->
-    <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
+    <div :class="[isOpen ? '' : 'hidden', 'xl:hidden']">
       <div class="px-2 pt-2 pb-3 sm:px-3 bg-b-purple">
         <!-- ACTIVE STYLES <a
           href="#"
@@ -111,10 +111,10 @@
         <div class="px-2">
           <a
             href="tel:0743437074"
-            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-white hover:bg-b-orange focus:outline-none focus:text-white focus:bg-gray-700 underline"
             @click="close"
           >
-            Sună-ne 0743-437-074
+            Sună-ne: 0743-437-074
           </a>
           <a
             href="/inscriere-curs.html"
