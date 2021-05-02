@@ -15,9 +15,9 @@
             </template>
           </span>
           <span
-            class="block mt-5 text-4xl font-extrabold text-gray-100 sm:text-5xl sm:tracking-tight lg:text-6xl max-w-5xl mx-auto"
+            class="block mt-5 text-4xl font-extrabold text-gray-100 sm:text-5xl sm:tracking-tight lg:text-6xl max-w-5xl mx-auto "
           >
-            <span v-if="longTitle != ''">
+            <span v-if="longTitle != ''" class="leading-normal">
               {{ longTitle }}
             </span>
             <span v-else>{{ title }}</span>
