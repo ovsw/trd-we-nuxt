@@ -7,7 +7,7 @@
         <!-- desktop menu wrapper -->
         <div class="menuWrapper flex items-center">
           <div class="flex-shrink-0">
-            <NuxtLink to="/" class="flex items-center">
+            <NuxtLink to="/" class="flex items-center" @click.native="close">
               <span class="h-20 w-20">
                 <lottie
                   :options="lottieOptions"
@@ -135,6 +135,7 @@
 import lottie from "vue-lottie/src/lottie.vue";
 import * as animationData from "@/assets/lottie/tridia-cube-orange.json";
 import nav from "@/assets/nav.json";
+
 
 export default {
   components: {
