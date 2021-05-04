@@ -111,7 +111,7 @@
           <p>
             s.c. ASL Mus-Mus s.r.l. <br />
             Str.Surorile Martir Caceu, Nr.9 <br />
-            Timișoara, Timis 300585
+            Timișoara, Timiș 300585
           </p>
         </div>
 
@@ -121,7 +121,7 @@
         </div>
 
         <div>
-          <p>Email</p>
+          <p>E-mail</p>
           <p><a href="mailto:info@tridia.ro">info@tridia.ro</a></p>
         </div>
 
