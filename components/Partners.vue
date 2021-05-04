@@ -46,8 +46,7 @@
           în Design 3D
         </h2>
         <p class="measure-30">
-          Vrem sa creăm profesioniști, nu doar oameni care imită ce fac
-          profesioniștii.
+          Vrem să creăm profesioniști, nu doar oameni care imită ce fac profesioniștii.
         </p>
         <div class="cluster-l">
           <div>
