@@ -153,8 +153,12 @@ export default {
           }
         }`);
       const posts = await client.fetch(/* groq */ `*[_type == 'post'] {
-          ...
-          } | order(content.date asc)`);
+        ...,
+        content {
+          ...,
+          'mainImageUrl': mainImage.asset->url 
+        }
+      } | order(content.date asc)`);
       const staffMembers = await client.fetch(/* groq */ `*[_type == 'staffMember'] {
           ...
           }`);
