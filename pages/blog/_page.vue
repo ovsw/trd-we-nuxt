@@ -5,6 +5,7 @@
       :longTitle="page.content.longTitle"
       :intro="page.content.excerpt"
     />
+
     <SectionsRenderer :sections="page.content.sections1" />
   </div>
 </template>
@@ -99,7 +100,7 @@ export default {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: this.seoTitle,
-      image: this.page.content.mainImageUrl,
+      image: `${this.page.content.mainImageUrl}?w=1200&h=630&auto=format`,
       author: {
         "@type": "Organization",
         name: "Tridia"
