@@ -101,7 +101,8 @@ export default {
     "~plugins/preview.client.js",
     "~plugins/image-builder.js",
     "~plugins/filters.js",
-    "~plugins/vue-typer.client.js"
+    "~plugins/vue-typer.client.js",
+    "~/plugins/jsonld"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

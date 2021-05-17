@@ -18,6 +18,7 @@ const query = /* groq */ `
           ...,
           content {
   					...,
+            'mainImageUrl': mainImage.asset->url 
           }
         }
 }
@@ -90,6 +91,28 @@ export default {
       __dangerouslyDisableSanitizersByTagID: {
         ogimage: ["content"]
       }
+    };
+  },
+
+  jsonld() {
+    return {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: this.seoTitle,
+      image: this.page.content.mainImageUrl,
+      author: {
+        "@type": "Organization",
+        name: "Tridia"
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Tridia",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://tridia.ro/_nuxt/img/tridia-logo-white.88a26aa.png"
+        }
+      },
+      datePublished: this.page.content.date
     };
   },
 

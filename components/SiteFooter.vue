@@ -131,7 +131,7 @@
           <div class="flex space-x-4">
             <span>
               <a
-                href="https://www.facebook.com/cursuri.tridia"
+                href="https://www.facebook.com/tridia.cursuri3dsMax"
                 target="_blank"
                 rel="noopener"
                 class="socialLink"
