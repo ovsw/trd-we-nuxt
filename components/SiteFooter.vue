@@ -131,35 +131,51 @@
           <div class="flex space-x-4">
             <span>
               <a
-                href="https://www.facebook.com/tridia.cursuri3dsMax"
+                href="https://www.facebook.com/tridia.cursuri3dsMax/"
                 target="_blank"
                 rel="noopener"
                 class="socialLink"
               >
-                <img
-                  src="https://assets.website-files.com/5fc26bcebd65e872af7fed31/5fc2d6c44a77e5ca2e017c67_5fb410854861eda4ec030b2f_Group%202%201.svg"
-                  alt="Facebook Logo Icon"
+                <svg-icon
+                  name="facebook-f-brands"
+                  title="logo Facebook"
+                  height="2em"
+                  width="2em"
                 />
               </a>
             </span>
 
             <span>
-              <a href="#" target="_blank" rel="noopener" class="socialLink">
-                <img
-                  src="https://assets.website-files.com/5fc26bcebd65e872af7fed31/5fc2d6c4e509f31bddd6ec13_5fb410854861edca9a030b2e_Group%209%201.svg"
-                  alt="Instagram Logo Icon"
+              <a
+                href="https://www.instagram.com/tridia.tm/"
+                target="_blank"
+                rel="noopener"
+                class="socialLink"
+              >
+                <svg-icon
+                  name="instagram-brands"
+                  title="logo Instagram"
+                  height="2em"
+                  width="2em"
                 />
               </a>
             </span>
 
-            <!-- <span>
-              <a href="#" target="_blank" rel="noopener" class="socialLink">
-                <img
-                  src="https://assets.website-files.com/5fc26bcebd65e872af7fed31/5fc2d6c451c3f8eaf374fb3b_5fb410854861ed692b030b2d_Group%2010%201.svg"
-                  alt="Twitter Logo Icon"
+            <span>
+              <a
+                href="https://www.linkedin.com/company/tridia/"
+                target="_blank"
+                rel="noopener"
+                class="socialLink"
+              >
+                <svg-icon
+                  name="linkedin-in-brands"
+                  title="logo LinkedIn"
+                  height="2em"
+                  width="2em"
                 />
               </a>
-            </span> -->
+            </span>
           </div>
           <!-- </LCluster> -->
         </div>
