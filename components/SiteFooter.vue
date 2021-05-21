@@ -4,7 +4,9 @@
       <!-- COL1 -->
       <div class="footerColumn space-y-10 ">
         <NuxtLink to="/"
-          ><img src="~/assets/images/logos/tridia-logo-white.png"
+          ><img
+            src="~/assets/images/logos/tridia-logo-white.png"
+            alt="Logo Tridia"
         /></NuxtLink>
         <p>
           Tridia oferă instruire practică în 3DSMax pentru tineri din domenii
