@@ -61,7 +61,7 @@
         <LCluster style="--spacing: 3rem;">
           <ul class="space-y-2">
             <li><NuxtLink to="/blog/">Noutăți</NuxtLink></li>
-            <li><NuxtLink to="/cursuri/">Cursuri</NuxtLink></li>
+            <li><NuxtLink to="/cursuri-grafica-3d/">Cursuri</NuxtLink></li>
             <!-- <li>
               <NuxtLink
                 to="/cursuri/curs-3d-studio-max-arhitectura-and-design-interior/"
