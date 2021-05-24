@@ -38,15 +38,16 @@ export default {
         priceRange: "$$",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Str.Surorile Martir Caceu, Nr.9",
+          streetAddress: "Splaiul Peneș Curcanul 4-5",
           addressLocality: "Timișoara",
-          postalCode: "300585",
+          addressRegion: "Timiș",
+          postalCode: "300124",
           addressCountry: "RO"
         },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 45.7425814,
-          longitude: 21.2409214
+          latitude: 45.7615191,
+          longitude: 21.2518665
         },
         openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",
@@ -69,8 +70,8 @@ export default {
           "@type": "PostalAddress",
           streetAddress: "Str.Surorile Martir Caceu, Nr.9",
           addressLocality: "Timișoara",
-          postalCode: "Timiș",
-          addressRegion: "",
+          postalCode: "300124",
+          addressRegion: "Timiș",
           addressCountry: "Romania"
         }
       }
