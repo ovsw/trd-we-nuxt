@@ -13,7 +13,7 @@ const configSanity = {
 };
 const client = createClient(configSanity);
 
-const seoTitle = "Cursuri de Design 3D 3DS Max în Timișoara | Tridia";
+const seoTitle = "Cursuri de Design 3D 3DS Max în Timișoara";
 const seoDescription = "Instruire profesionala Design 3D, 3DS Max, Timișoara.";
 const seoSocialShareImage = "/tridia-default-social-share-image.jpg";
 const seoCannonicalUrl = "https://tridia.ro";

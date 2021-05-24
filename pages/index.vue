@@ -49,7 +49,7 @@ export default {
     seoImage() {
       return undefined;
     },
-    seositeHomeUrl() {
+    seoPageUrl() {
       return `https://tridia.ro/`;
     },
     seoShareImage() {
