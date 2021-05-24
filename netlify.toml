@@ -13,3 +13,21 @@
   to = "https://tridia.ro/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://www.tridia.ro/cursuri/"
+  to = "https://tridia.ro/cursuri-grafica-3d/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.tridia.ro/aeche-edu-e-acum-tridia/"
+  to = "https://tridia.ro/blog/aeche-edu-e-acum-tridia/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.tridia.ro/alex-mesesan-cum-am-ajuns-instructor-3ds-max/"
+  to = "https://tridia.ro/blog/alex-mesesan-cum-am-ajuns-instructor-3ds-max/"
+  status = 301
+  force = true
