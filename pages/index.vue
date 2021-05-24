@@ -1,6 +1,7 @@
 <template>
   <div>
     <Hero />
+    1111 {{ seoDescription }} 22222
     <Partners />
     <SectionsRenderer :sections="siteHome.content.sections.sections" />
     <PostsListing :posts="featuredPosts" />
@@ -13,6 +14,7 @@ const query = /* groq */ `
   "siteHome": *[_type == 'siteHome'] {
     ...,
     content {
+      ...,
       sections {
         sections[]{
   				...,
@@ -36,12 +38,12 @@ export default {
 
   computed: {
     seoTitle() {
-      if (this.siteHome.content.seo && this.siteHome.content.seo.title)
+      if (this.siteHome.content.seo.title)
         return this.siteHome.content.seo.title;
       return undefined;
     },
     seoDescription() {
-      if (this.siteHome.content.seo && this.siteHome.content.seo.description)
+      if (this.siteHome.content.seo.description)
         return this.siteHome.content.seo.description;
       return undefined;
     },
@@ -66,12 +68,30 @@ export default {
           content: this.seoDescription
         },
         {
+          hid: "ogtitle",
+          name: "og:title",
+          content: this.seoTitle
+        },
+        {
+          hid: "ogdescription",
+          name: "og:description",
+          content: this.seoDescription
+        },
+        {
+          hid: "ogimage",
+          name: "og:image",
+          content: this.seoShareImage
+        },
+        {
           hid: "ogurl",
           name: "og:url",
           content: this.seoPageUrl
         }
       ],
-      link: [{ rel: "cannonical", href: this.seoPageUrl }]
+      link: [{ rel: "cannonical", href: this.seoPageUrl }],
+      __dangerouslyDisableSanitizersByTagID: {
+        ogimage: ["content"]
+      }
     };
   },
 
