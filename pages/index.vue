@@ -1,7 +1,6 @@
 <template>
   <div>
     <Hero />
-    1111 {{ seoDescription }} 22222
     <Partners />
     <SectionsRenderer :sections="siteHome.content.sections.sections" />
     <PostsListing :posts="featuredPosts" />
