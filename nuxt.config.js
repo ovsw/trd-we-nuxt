@@ -61,6 +61,11 @@ export default {
         hid: "theme-color",
         name: "msapplication-TileColor",
         content: "#ffffff"
+      },
+      {
+        hid: "google-site-verification",
+        name: "google-site-verification",
+        content: "ZdK-Nn3jSbPWdEZhrWBdxluuEczPOKFZroVMSEU21sE"
       }
     ],
     link: [
