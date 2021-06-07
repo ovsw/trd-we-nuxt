@@ -112,7 +112,7 @@
 </template>
 
 <script>
-// import externalLink from "@/components/serializers/externalLink";
+import externalLink from "@/components/serializers/externalLink";
 import iframe from "@/components/serializers/iframe";
 import figure from "@/components/serializers/figure";
 
@@ -129,7 +129,8 @@ export default {
         types: {
           // link: externalLink,
           iframeEmbed: iframe,
-          mainImage: figure
+          mainImage: figure,
+          link: externalLink
         }
       }
     };
