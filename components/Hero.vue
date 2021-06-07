@@ -50,7 +50,7 @@
                 'Game Designeri.'
               ]"
               erase-style="select-back"
-              eraseDelay="50"
+              :eraseDelay="50"
               initial-action="erasing"
               >Arhitecți
               <span class="sr-only"
